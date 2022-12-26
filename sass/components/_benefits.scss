@@ -1,0 +1,68 @@
+.benefits {
+   background-color: var(--main-usual-color);
+
+   &__list {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__item:not(:last-child) {
+      margin-right: 30px;
+   }
+
+   &__item {
+      display: block;
+   }
+
+   &__title {
+      margin-bottom: 10px;
+
+      color: var(--first-title-color);
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+   }
+}
+
+.benefits__dcr {
+   max-width: 270px;
+
+   color: var(--second-title-color);
+   font-size: 14px;
+   line-height: 1.7;
+   letter-spacing: 0.03em;
+}
+
+.benefits__icon {
+   width: 70px;
+   height: 70px;
+}
+
+.benefits__wrap {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 270px;
+   height: 120px;
+   background-color: var(--third-bcg-color);
+   border-radius: 4px;
+   margin-bottom: 30px;
+}
+
+/* .icon-antenna::before {
+   background-image: url(../img/antenna.svg);
+}
+
+.icon-clock::before {
+   background-image: url(../img/clock.svg);
+}
+
+.icon-diagram::before {
+   background-image: url(../img/diagram.svg);
+}
+
+.icon-astronaut::before {
+   background-image: url(../img/astronaut.svg);
+} */
