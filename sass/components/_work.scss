@@ -1,6 +1,10 @@
 .work {
    padding-top: 0;
 
+   @media screen and (max-width: 1199px) {
+      display: none;
+   }
+
    &__item:not(:last-child) {
       margin-right: 30px;
    }
@@ -42,4 +46,8 @@
       text-transform: uppercase;
       margin-top: 27px;
    }
+
+   // @media screen and (min-width: 480px) {
+   //    display: flex;
+   // }
 }

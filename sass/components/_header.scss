@@ -1,9 +1,26 @@
 .header {
-   background-color: var(--main-usual-color);
+   height: 60px;
+   background-color: vainputr(--main-usual-color);
    border-bottom: 1px solid var(--header-border-color);
    &-nav {
       display: flex;
       align-items: center;
+   }
+
+   @media screen and (min-width: 768px) {
+      height: 80px;
+   }
+}
+
+.header .container {
+   display: flex;
+   @media screen and (min-width: 768px) {
+      display: flex;
+      height: 80px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      width: 1200px;
    }
 }
 
@@ -25,9 +42,32 @@
 }
 
 .header__logo {
-   margin-right: 93px;
-   padding-top: 24px;
-   padding-bottom: 25px;
+   margin-right: 0px;
+   padding-top: 16px;
+   padding-bottom: 16px;
+
+   @media screen and (min-width: 768px) {
+      margin-right: 87px;
+      padding-top: 26px;
+      padding-bottom: 26px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      margin-right: 92px;
+   }
+}
+
+.header__btn {
+   display: block;
+   margin: 0;
+   padding: 10px;
+   background-color: transparent;
+   border: 0px;
+   margin-left: auto;
+
+   @media screen and (min-width: 768px) {
+      display: none;
+   }
 }
 
 .pages__item:not(:last-child) {
@@ -35,20 +75,41 @@
 }
 
 .nav {
-   display: flex;
+   display: none;
+
+   @media screen and (min-width: 768px) {
+      display: flex;
+   }
 }
 
 .pages {
    display: flex;
+   margin-right: 70px;
+
+   @media screen and (min-width: 1200px) {
+      margin-right: 299px;
+   }
 }
 
 .header__contacts {
    display: flex;
    margin-left: auto;
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: block;
+      padding-top: 21px;
+      padding-bottom: 21px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      display: flex;
+   }
 }
 
-.contacts__item:not(:last-child) {
-   margin-right: 50px;
+@media screen and (min-width: 1200px) {
+   .contacts__item:not(:last-child) {
+      margin-right: 50px;
+   }
 }
 
 .pages__link {
@@ -104,6 +165,24 @@
    &:hover,
    &:focus {
       color: var(--main-accent-color);
+   }
+
+   @media screen and (min-width: 768px) {
+      padding-top: 0px;
+      padding-bottom: 0px;
+
+      margin-bottom: 10px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .contacts__data:not(:last-child) {
+      margin-bottom: 10px;
    }
 }
 
@@ -251,3 +330,108 @@
 //       fill: var(--main-accent-color);
 //    }
 // }
+
+.mob-nav {
+}
+.mob-header__nav {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   width: 100vw;
+   height: 100vh;
+
+   padding: 48px 0px;
+
+   background-color: var(--main-usual-color);
+
+   .container {
+      display: block;
+   }
+}
+.mob-header__btn {
+   display: block;
+   margin-left: auto;
+
+   background-color: transparent;
+   border: 0px;
+}
+.pages {
+}
+.mob-header__pages {
+   display: block;
+   width: 100%;
+}
+
+.mob-pages__item {
+   width: 100%;
+}
+.mob-pages__link {
+   display: block;
+   color: var(--first-title-color);
+   font-weight: 500;
+   font-size: 40px;
+   line-height: 1.1;
+   letter-spacing: 0.02em;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-pages__link.current {
+   color: var(--main-accent-color);
+}
+.contacts {
+}
+.mob-header__contacts {
+}
+.contacts__item {
+}
+.mob-contacts__data {
+   display: flex;
+   align-items: center;
+   color: var(--second-title-color);
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.1;
+   letter-spacing: 0.02em;
+   text-transform: lowercase;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-contacts__data.tel {
+   font-size: 34px;
+   color: var(--main-accent-color);
+}
+
+.mob-contacts__data.mail {
+   font-size: 24px;
+}
+
+.mob-header__soc-list {
+   display: flex;
+}
+
+.mob-header__soc-link {
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 1.2px;
+   letter-spacing: 0.02em;
+
+   color: var(--main-accent-color);
+}
+
+.mob-header__soc-list > .item {
+   position: relative;
+}
+
+.mob-header__soc-list > .item:not(:last-child) {
+   margin-right: 20px;
+}
+
+.mob-header__soc-link::after {
+   content: "";
+   position: absolute;
+   display: block;
+   width: 1px;
+   height: 22px;
+   top: 0;
+   left: 0;
+   color: red;
+}

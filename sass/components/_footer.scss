@@ -3,6 +3,10 @@
    padding-top: 60px;
    padding-bottom: 60px;
 
+   &-links {
+      margin-bottom: 60px;
+   }
+
    &-logo {
       display: inline-block;
       margin-bottom: 20px;
@@ -56,6 +60,12 @@
    &-container {
       display: flex;
       align-items: baseline;
+      flex-wrap: wrap;
+
+      @media screen and (min-width: 320px) and (max-width: 1199px) {
+         text-align: center;
+         justify-content: center;
+      }
    }
 
    &-title {
@@ -104,18 +114,44 @@
    }
 
    &-wrapper {
-      display: flex;
-      align-items: baseline;
-      margin-right: 93px;
+      display: block;
+
+      // flex-wrap: wrap;
+
+      @media screen and (min-width: 768px) {
+         display: flex;
+         align-items: baseline;
+      }
+
+      // @media screen and (mib-width: 1200px) {
+      //    margin-right: auto;
+      // }
    }
 
    &-adress-wrapper {
-      margin-right: 90px;
+      // margin-right: 90px;
+      margin-bottom: 60px;
+
+      @media screen and (min-width: 768px) {
+         margin-right: 165px;
+      }
+
+      @media screen and (min-width: 1200px) {
+         margin-right: 80px;
+      }
    }
 
    &-studio-form {
-      margin-left: auto;
-      width: 570px;
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+         width: 450px;
+      }
+
+      @media screen and (min-width: 1200px) {
+         margin-left: auto;
+         width: 570px;
+      }
    }
 
    &-lable {
@@ -131,8 +167,9 @@
    }
 
    &-input {
-      width: 358px;
+      width: 100%;
       margin-right: 9px;
+      margin-bottom: 20px;
       padding: 15px 15px 16px;
       background-color: transparent;
       color: var(--main-usual-color);
@@ -145,6 +182,14 @@
       &:hover,
       &:focus {
          border-color: rgba(200, 200, 200, 0.737);
+      }
+
+      @media screen and (min-width: 768px) {
+         width: 450px;
+      }
+
+      @media screen and (min-width: 1200px) {
+         width: 346px;
       }
    }
 

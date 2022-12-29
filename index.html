@@ -28,11 +28,11 @@
    <body>
       <header class="header">
          <div class="container">
-            <nav class="nav header__nav">
-               <a href="index.html" lang="en" class="logo header__logo link">
-                  <span class="accent">Web</span>Studio</a
-               >
+            <a href="index.html" lang="en" class="logo header__logo link">
+               <span class="accent">Web</span>Studio</a
+            >
 
+            <nav class="nav header__nav">
                <ul class="pages header__pages list">
                   <li class="pages__item">
                      <a class="pages__link link current" href="./index.html"
@@ -71,18 +71,83 @@
                   </li>
                </ul>
             </nav>
+            <button class="header__btn">
+               <svg class="header__icon-start" width="40" height="40px">
+                  <use href="./img/icons.svg#icon-close"></use>
+               </svg>
+            </button>
          </div>
+
+         <nav class="mob-nav mob-header__nav">
+            <div class="container">
+               <button class="mob-header__btn">
+                  <svg class="mob-header__icon" width="40" height="40">
+                     <use href="./img/icons.svg#icon-mob-close"></use>
+                  </svg>
+               </button>
+
+               <ul class="pages mob-header__pages list">
+                  <li class="mob-pages__item">
+                     <a class="mob-pages__link link current" href="./index.html"
+                        >Студія</a
+                     >
+                  </li>
+                  <li class="mob-pages__item">
+                     <a class="mob-pages__link link" href="./portfolio.html"
+                        >Портфоліо</a
+                     >
+                  </li>
+                  <li class="mob-pages__item">
+                     <a class="mob-pages__link link" href="/">Контакти</a>
+                  </li>
+               </ul>
+
+               <ul class="contacts mob-header__contacts list">
+                  <li class="item">
+                     <a
+                        class="mob-contacts__data tel link"
+                        href="tel:+380961111111"
+                     >
+                        +38 096 111 11 11
+                     </a>
+                  </li>
+                  <li class="contacts__item">
+                     <a
+                        class="mob-contacts__data mail link"
+                        href="mailto:info@devstudio.com"
+                     >
+                        info@devstudio.com
+                     </a>
+                  </li>
+               </ul>
+
+               <ul class="mob-header__soc-list list">
+                  <li class="item">
+                     <a href="" class="mob-header__soc-link link">Instagram</a>
+                  </li>
+                  <li class="item">
+                     <a href="" class="mob-header__soc-link link">Twitter</a>
+                  </li>
+                  <li class="item">
+                     <a href="" class="mob-header__soc-link link">Facebook</a>
+                  </li>
+                  <li class="item">
+                     <a href="" class="mob-header__soc-link link">LinkedIn</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
       </header>
 
       <main>
-         <section class="hero">
+         <!-- <section class="hero">
             <div class="container hero-box">
                <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
                <button class="hero__btn" type="button" data-modal-open>
                   Замовити послугу
                </button>
             </div>
-         </section>
+         </section> -->
 
          <section class="benefits section">
             <div class="container">
@@ -140,7 +205,7 @@
             </div>
          </section>
 
-         <section class="section work">
+         <!-- <section class="section work">
             <div class="container work">
                <h2 class="work__title">Чим ми займаємося</h2>
                <ul class="work__list list">
@@ -179,9 +244,9 @@
                   </li>
                </ul>
             </div>
-         </section>
+         </section> -->
 
-         <section class="team section">
+         <!-- <section class="team section">
             <div class="container">
                <h2 class="team-title">Наша команда</h2>
                <ul class="list team-list">
@@ -455,9 +520,9 @@
                   </li>
                </ul>
             </div>
-         </section>
+         </section> -->
 
-         <section class="clients-section section">
+         <!-- <section class="clients-section section">
             <div class="container">
                <h2 class="clients-title">Постійні клієнти</h2>
                <ul class="clients-list list">
@@ -505,10 +570,10 @@
                   </li>
                </ul>
             </div>
-         </section>
+         </section> -->
       </main>
 
-      <footer class="footer">
+      <!-- <footer class="footer">
          <div class="container footer-container">
             <div class="footer-wrapper">
                <div class="footer-adress-wrapper">
@@ -598,7 +663,7 @@
                </button>
             </form>
          </div>
-      </footer>
+      </footer> -->
 
       <div class="backdrop is-hidden" data-modal>
          <div class="modal">
