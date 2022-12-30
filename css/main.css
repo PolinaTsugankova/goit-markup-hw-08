@@ -314,14 +314,14 @@ body {
 }
 
 .mob-header__nav {
+  background-color: var(--main-usual-color);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 0px;
-  background-color: var(--main-usual-color);
+  z-index: 999;
 }
 .mob-header__nav .container {
   display: block;
@@ -330,6 +330,7 @@ body {
 .mob-header__btn {
   display: block;
   margin-left: auto;
+  padding: 10px 0px;
   background-color: transparent;
   border: 0px;
 }
@@ -337,10 +338,15 @@ body {
 .mob-header__pages {
   display: block;
   width: 100%;
+  margin-bottom: 302px;
 }
 
 .mob-pages__item {
   width: 100%;
+}
+
+.mob-pages__item:not(:last-child) {
+  margin-bottom: 35px;
 }
 
 .mob-pages__link {
@@ -372,10 +378,12 @@ body {
 .mob-contacts__data.tel {
   font-size: 34px;
   color: var(--main-accent-color);
+  margin-bottom: 32px;
 }
 
 .mob-contacts__data.mail {
   font-size: 24px;
+  margin-bottom: 64px;
 }
 
 .mob-header__soc-list {
@@ -391,22 +399,19 @@ body {
 }
 
 .mob-header__soc-list > .item {
-  position: relative;
+  padding-right: 10px;
 }
 
 .mob-header__soc-list > .item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.mob-header__soc-link::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 1px;
-  height: 22px;
-  top: 0;
-  left: 0;
-  color: red;
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .hero-box {
