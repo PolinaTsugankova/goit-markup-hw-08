@@ -22,11 +22,29 @@
          rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)
       ),
-      url(../img/hero-bcg.jpg);
+      url(../img/hero-bcg-mob.jpg);
    background-repeat: no-repeat;
    background-position: center;
    background-color: var(--first-bcg-color);
    background-size: cover;
+
+   @media screen and (min-width: 768px) {
+      background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+         ),
+         url(../img/hero-bcg-tab.jpg);
+   }
+
+   @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+         ),
+         url(../img/hero-bcg.jpg);
+   }
 }
 
 .hero__title {
