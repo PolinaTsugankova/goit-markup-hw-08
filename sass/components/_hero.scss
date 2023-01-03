@@ -23,6 +23,16 @@
          rgba(47, 48, 58, 0.4)
       ),
       url(../img/hero-bcg-mob.jpg);
+
+   @include retina {
+      background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+         ),
+         url(../img/hero-bcg-mob-2x.jpg);
+   }
+
    background-repeat: no-repeat;
    background-position: center;
    background-color: var(--first-bcg-color);
@@ -35,6 +45,15 @@
             rgba(47, 48, 58, 0.4)
          ),
          url(../img/hero-bcg-tab.jpg);
+
+      @include retina {
+         background-image: linear-gradient(
+               to right,
+               rgba(47, 48, 58, 0.4),
+               rgba(47, 48, 58, 0.4)
+            ),
+            url(../img/hero-bcg-tab-2x.jpg);
+      }
    }
 
    @media screen and (min-width: 1200px) {
@@ -44,6 +63,15 @@
             rgba(47, 48, 58, 0.4)
          ),
          url(../img/hero-bcg.jpg);
+
+      @include retina {
+         background-image: linear-gradient(
+               to right,
+               rgba(47, 48, 58, 0.4),
+               rgba(47, 48, 58, 0.4)
+            ),
+            url(../img/hero-bcg-2x.jpg);
+      }
    }
 }
 

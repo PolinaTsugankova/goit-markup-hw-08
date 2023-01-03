@@ -224,12 +224,13 @@
             </div>
          </section>
 
-         <!-- <section class="section work">
+         <section class="section work">
             <div class="container work">
                <h2 class="work__title">Чим ми займаємося</h2>
                <ul class="work__list list">
                   <li class="work__item">
                      <img
+                        srcset="./img/studio1.jpg 1x, ./img/studio1-2x.jpg 2x"
                         src="./img/studio1.jpg"
                         alt="Робота з технологією"
                         width="370"
@@ -241,6 +242,7 @@
                   </li>
                   <li class="work__item">
                      <img
+                        srcset="./img/studio2.jpg 1x, ./img/studio2-2x.jpg 2x"
                         src="./img/studio2.jpg"
                         alt="Робота з технологією"
                         width="370"
@@ -252,6 +254,7 @@
                   </li>
                   <li class="work__item">
                      <img
+                        srcset="./img/studio3.jpg 1x, ./img/studio3-2x.jpg 2x"
                         src="./img/studio3.jpg"
                         alt="Робота з технологією"
                         width="370"
@@ -263,19 +266,48 @@
                   </li>
                </ul>
             </div>
-         </section> -->
+         </section>
 
-         <!-- <section class="team section">
+         <section class="team section">
             <div class="container">
                <h2 class="team-title">Наша команда</h2>
                <ul class="list team-list">
                   <li class="teams-member item">
-                     <img
-                        src="./img/worker1.jpg"
-                        alt="Фото працівника"
-                        width="270"
-                        height="260"
-                     />
+                     <picture>
+                        <source
+                           srcset="
+                              ./img/worker1-des.jpg    1x,
+                              ./img/worker1-des-2x.jpg 2x
+                           "
+                           media="(min-width: 1200px)"
+                        />
+                        <source
+                           srcset="
+                              ./img/worker1-tab.jpg    1x,
+                              ./img/worker1-tab-2x.jpg 2x
+                           "
+                           media="(min-width: 768px)"
+                        />
+                        <source
+                           srcset="
+                              ./img/worker1-mob.jpg    1x,
+                              ./img/worker1-mob-2x.jpg 2x
+                           "
+                           media="(min-width: 480px)"
+                        />
+
+                        <img
+                           srcset="
+                              ./img/worker1.jpg    1x,
+                              ./img/worker1-2x.jpg 2x
+                           "
+                           src="./img/worker1.jpg"
+                           alt="Фото працівника"
+                           width="270"
+                           height="260"
+                        />
+                     </picture>
+
                      <div class="member-text">
                         <h3 class="member-name">Ігор Дем'яненко</h3>
                         <p lang="en" class="member-work">Product Designer</p>
@@ -337,12 +369,40 @@
                      </div>
                   </li>
                   <li class="teams-member item">
-                     <img
-                        src="./img/worker2.jpg"
-                        alt="Фото працівника"
-                        width="270"
-                        height="260"
-                     />
+                     <picture>
+                        <source
+                           srcset="
+                              ./img/worker2-des.jpg    1x,
+                              ./img/worker2-des-2x.jpg 2x
+                           "
+                           media="(min-width: 1200px)"
+                        />
+                        <source
+                           srcset="
+                              ./img/worker2-tab.jpg    1x,
+                              ./img/worker2-tab-2x.jpg 2x
+                           "
+                           media="(min-width: 768px)"
+                        />
+                        <source
+                           srcset="
+                              ./img/worker2-mob.jpg    1x,
+                              ./img/worker2-mob-2x.jpg 2x
+                           "
+                           media="(min-width: 480px)"
+                        />
+
+                        <img
+                           srcset="
+                              ./img/worker2.jpg    1x,
+                              ./img/worker2-2x.jpg 2x
+                           "
+                           src="./img/worker2.jpg"
+                           alt="Фото працівника"
+                           width="270"
+                           height="260"
+                        />
+                     </picture>
                      <div class="member-text">
                         <h3 class="member-name">Ольга Рєпіна</h3>
                         <p lang="en" class="member-work">Frontend Developer</p>
@@ -404,12 +464,40 @@
                      </div>
                   </li>
                   <li class="teams-member item">
-                     <img
-                        src="./img/worker3.jpg"
-                        alt="Фото працівника"
-                        width="270"
-                        height="260"
-                     />
+                     <picture>
+                        <source
+                           srcset="
+                              ./img/worker3-des.jpg    1x,
+                              ./img/worker3-des-2x.jpg 2x
+                           "
+                           media="(min-width: 1200px)"
+                        />
+                        <source
+                           srcset="
+                              ./img/worker3-tab.jpg    1x,
+                              ./img/worker3-tab-2x.jpg 2x
+                           "
+                           media="(min-width: 768px)"
+                        />
+                        <source
+                           srcset="
+                              ./img/worker3-mob.jpg    1x,
+                              ./img/worker3-mob-2x.jpg 2x
+                           "
+                           media="(min-width: 480px)"
+                        />
+
+                        <img
+                           srcset="
+                              ./img/worker3.jpg    1x,
+                              ./img/worker3-2x.jpg 2x
+                           "
+                           src="./img/worker3.jpg"
+                           alt="Фото працівника"
+                           width="270"
+                           height="260"
+                        />
+                     </picture>
                      <div class="member-text">
                         <h3 class="member-name">Микола Тарасов</h3>
                         <p lang="en" class="member-work">Marketing</p>
@@ -471,12 +559,40 @@
                      </div>
                   </li>
                   <li class="teams-member item">
-                     <img
-                        src="./img/worker4.jpg"
-                        alt="Фото працівника"
-                        width="270"
-                        height="260"
-                     />
+                     <picture>
+                        <source
+                           srcset="
+                              ./img/worker4-des.jpg    1x,
+                              ./img/worker4-des-2x.jpg 2x
+                           "
+                           media="(min-width: 1200px)"
+                        />
+                        <source
+                           srcset="
+                              ./img/worker4-tab.jpg    1x,
+                              ./img/worker4-tab-2x.jpg 2x
+                           "
+                           media="(min-width: 768px)"
+                        />
+                        <source
+                           srcset="
+                              ./img/worker4-mob.jpg    1x,
+                              ./img/worker4-mob-2x.jpg 2x
+                           "
+                           media="(min-width: 480px)"
+                        />
+
+                        <img
+                           srcset="
+                              ./img/worker4.jpg    1x,
+                              ./img/worker4-2x.jpg 2x
+                           "
+                           src="./img/worker4.jpg"
+                           alt="Фото працівника"
+                           width="270"
+                           height="260"
+                        />
+                     </picture>
                      <div class="member-text">
                         <h3 class="member-name">Михайло Єрмаков</h3>
                         <p lang="en" class="member-work">UI Designer</p>
@@ -539,9 +655,9 @@
                   </li>
                </ul>
             </div>
-         </section> -->
+         </section>
 
-         <!-- <section class="clients-section section">
+         <section class="clients-section section">
             <div class="container">
                <h2 class="clients-title">Постійні клієнти</h2>
                <ul class="clients-list list">
@@ -589,10 +705,10 @@
                   </li>
                </ul>
             </div>
-         </section> -->
+         </section>
       </main>
 
-      <!-- <footer class="footer">
+      <footer class="footer">
          <div class="container footer-container">
             <div class="footer-wrapper">
                <div class="footer-adress-wrapper">
@@ -682,7 +798,7 @@
                </button>
             </form>
          </div>
-      </footer> -->
+      </footer>
 
       <div class="backdrop is-hidden" data-modal>
          <div class="modal">
