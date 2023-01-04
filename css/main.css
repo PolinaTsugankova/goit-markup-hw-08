@@ -352,7 +352,6 @@ body {
 .mob-header__pages {
   display: block;
   width: 100%;
-  margin-bottom: 302px;
 }
 
 .mob-pages__item {
@@ -425,7 +424,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  height: 100vh;
+  padding-bottom: 20px;
 }
 
 .hero-box {
@@ -471,6 +471,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bcg.jpg);
   }
 }
@@ -1298,7 +1300,7 @@ body {
 .modal-textarea {
   display: block;
   padding: 12px;
-  min-width: 370px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: transparent;
