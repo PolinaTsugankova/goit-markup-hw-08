@@ -28,11 +28,17 @@
    <body>
       <header class="header">
          <div class="container">
-            <nav class="nav header__nav">
-               <a href="index.html" lang="en" class="logo header__logo link">
-                  <span class="accent">Web</span>Studio</a
-               >
+            <a href="index.html" lang="en" class="logo header__logo link">
+               <span class="accent">Web</span>Studio</a
+            >
 
+            <button class="header__btn js-open-menu">
+               <svg class="header__icon" width="40" height="40">
+                  <use href="./img/icons.svg#icon-menu_start"></use>
+               </svg>
+            </button>
+
+            <nav class="nav header__nav">
                <ul class="pages header__pages list">
                   <li class="pages__item">
                      <a class="pages__link link" href="./index.html">Студія</a>
@@ -70,6 +76,82 @@
                </ul>
             </nav>
          </div>
+
+         <nav class="mob-nav mob-header__nav js-menu-container">
+            <div class="container">
+               <div class="menu-content">
+                  <div>
+                     <button class="mob-header__btn js-close-menu">
+                        <svg class="mob-header__icon" width="40" height="40">
+                           <use href="./img/icons.svg#icon-mob-close"></use>
+                        </svg>
+                     </button>
+
+                     <ul class="pages mob-header__pages list">
+                        <li class="mob-pages__item">
+                           <a class="mob-pages__link link" href="./index.html"
+                              >Студія</a
+                           >
+                        </li>
+                        <li class="mob-pages__item">
+                           <a
+                              class="mob-pages__link link current"
+                              href="./portfolio.html"
+                              >Портфоліо</a
+                           >
+                        </li>
+                        <li class="mob-pages__item">
+                           <a class="mob-pages__link link" href="/">Контакти</a>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <div>
+                     <ul class="contacts mob-header__contacts list">
+                        <li class="item">
+                           <a
+                              class="mob-contacts__data tel link"
+                              href="tel:+380961111111"
+                           >
+                              +38 096 111 11 11
+                           </a>
+                        </li>
+                        <li class="contacts__item">
+                           <a
+                              class="mob-contacts__data mail link"
+                              href="mailto:info@devstudio.com"
+                           >
+                              info@devstudio.com
+                           </a>
+                        </li>
+                     </ul>
+
+                     <ul class="mob-header__soc-list list">
+                        <li class="item">
+                           <a href="" class="mob-header__soc-link link"
+                              >Instagram</a
+                           >
+                        </li>
+                        <li class="item">
+                           <a href="" class="mob-header__soc-link link"
+                              >Twitter</a
+                           >
+                        </li>
+                        <li class="item">
+                           <a href="" class="mob-header__soc-link link"
+                              >Facebook</a
+                           >
+                        </li>
+                        <li class="item">
+                           <a href="" class="mob-header__soc-link link"
+                              >LinkedIn</a
+                           >
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </nav>
       </header>
 
       <main>
@@ -98,12 +180,41 @@
                   <li class="example-item item">
                      <a href="/" class="link">
                         <div class="example-thumb">
-                           <img
-                              src="./img/example1.jpg"
-                              alt="Проект 1"
-                              width="370"
-                              height="294"
-                           />
+                           <picture>
+                              <source
+                                 srcset="
+                                    ./img/example1-des.jpg    1x,
+                                    ./img/example1-des-2x.jpg 2x
+                                 "
+                                 media="(min-width: 1200px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./img/example1-tab.jpg    1x,
+                                    ./img/example1-tab-2x.jpg 2x
+                                 "
+                                 media="(min-width: 768px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./img/example1-mob.jpg    1x,
+                                    ./img/example1-mob-2x.jpg 2x
+                                 "
+                                 media="(min-width: 480px)"
+                              />
+
+                              <img
+                                 srcset="
+                                    ./img/example1-des.jpg    1x,
+                                    ./img/example1-des-2x.jpg 2x
+                                 "
+                                 src="./img/example1-des.jpg"
+                                 alt="Проект 1"
+                                 width="370"
+                                 height="294"
+                              />
+                           </picture>
+
                            <div class="example-overlay">
                               <p class="example-thumb-text">
                                  Ресурс пропонує комплексні пропозиції з різним
@@ -122,12 +233,40 @@
                   <li class="example-item item">
                      <a href="/" class="link">
                         <div class="example-thumb">
-                           <img
-                              src="./img/example2.jpg"
-                              alt="Проект 1"
-                              width="370"
-                              height="294"
-                           />
+                           <picture>
+                              <source
+                                 srcset="
+                                    ./img/example2-des.jpg    1x,
+                                    ./img/example2-des-2x.jpg 2x
+                                 "
+                                 media="(min-width: 1200px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./img/example2-tab.jpg    1x,
+                                    ./img/example2-tab-2x.jpg 2x
+                                 "
+                                 media="(min-width: 768px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./img/example2-mob.jpg    1x,
+                                    ./img/example2-mob-2x.jpg 2x
+                                 "
+                                 media="(min-width: 480px)"
+                              />
+
+                              <img
+                                 srcset="
+                                    ./img/example2-des.jpg    1x,
+                                    ./img/example2-des-2x.jpg 2x
+                                 "
+                                 src="./img/example2-des.jpg"
+                                 alt="Проект 1"
+                                 width="370"
+                                 height="294"
+                              />
+                           </picture>
                            <div class="example-overlay">
                               <p class="example-thumb-text">
                                  Ресурс пропонує комплексні пропозиції з різним
@@ -138,7 +277,219 @@
                            </div>
                         </div>
                         <div class="example-text">
-                           <h2 class="example-title">Технокряк</h2>
+                           <h2 class="example-title">
+                              Постер New Orlean vs Golden Star
+                           </h2>
+                           <p class="example-dcr">Дизайн</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="example-item item">
+                     <a href="/" class="link">
+                        <div class="example-thumb">
+                           <picture>
+                              <source
+                                 srcset="
+                                    ./img/example3-des.jpg    1x,
+                                    ./img/example3-des-2x.jpg 2x
+                                 "
+                                 media="(min-width: 1200px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./img/example3-tab.jpg    1x,
+                                    ./img/example3-tab-2x.jpg 2x
+                                 "
+                                 media="(min-width: 768px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./img/example3-mob.jpg    1x,
+                                    ./img/example3-mob-2x.jpg 2x
+                                 "
+                                 media="(min-width: 480px)"
+                              />
+
+                              <img
+                                 srcset="
+                                    ./img/example3-des.jpg    1x,
+                                    ./img/example3-des-2x.jpg 2x
+                                 "
+                                 src="./img/example3-des.jpg"
+                                 alt="Проект 1"
+                                 width="370"
+                                 height="294"
+                              />
+                           </picture>
+                           <div class="example-overlay">
+                              <p class="example-thumb-text">
+                                 Ресурс пропонує комплексні пропозиції з різним
+                                 рівнем функціоналу та сервісів. Все це
+                                 дозволить відвідувачу отримати вичерпні
+                                 відомості про компанію чи приватну особу.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="example-text">
+                           <h2 class="example-title">Ресторан Seafood</h2>
+                           <p class="example-dcr">Додаток</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="example-item item">
+                     <a href="/" class="link">
+                        <div class="example-thumb">
+                           <picture>
+                              <source
+                                 srcset="
+                                    ./img/example4-des.jpg    1x,
+                                    ./img/example4-des-2x.jpg 2x
+                                 "
+                                 media="(min-width: 1200px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./img/example4-tab.jpg    1x,
+                                    ./img/example4-tab-2x.jpg 2x
+                                 "
+                                 media="(min-width: 768px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./img/example4-mob.jpg    1x,
+                                    ./img/example4-mob-2x.jpg 2x
+                                 "
+                                 media="(min-width: 480px)"
+                              />
+
+                              <img
+                                 srcset="
+                                    ./img/example4-des.jpg    1x,
+                                    ./img/example4-des-2x.jpg 2x
+                                 "
+                                 src="./img/example4-des.jpg"
+                                 alt="Проект 1"
+                                 width="370"
+                                 height="294"
+                              />
+                           </picture>
+                           <div class="example-overlay">
+                              <p class="example-thumb-text">
+                                 Ресурс пропонує комплексні пропозиції з різним
+                                 рівнем функціоналу та сервісів. Все це
+                                 дозволить відвідувачу отримати вичерпні
+                                 відомості про компанію чи приватну особу.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="example-text">
+                           <h2 class="example-title">Проєкт Prime</h2>
+                           <p class="example-dcr">Маркетинг</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="example-item item">
+                     <a href="/" class="link">
+                        <div class="example-thumb">
+                           <picture>
+                              <source
+                                 srcset="
+                                    ./img/example5-des.jpg    1x,
+                                    ./img/example5-des-2x.jpg 2x
+                                 "
+                                 media="(min-width: 1200px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./img/example5-tab.jpg    1x,
+                                    ./img/example5-tab-2x.jpg 2x
+                                 "
+                                 media="(min-width: 768px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./img/example5-mob.jpg    1x,
+                                    ./img/example5-mob-2x.jpg 2x
+                                 "
+                                 media="(min-width: 480px)"
+                              />
+
+                              <img
+                                 srcset="
+                                    ./img/example5-des.jpg    1x,
+                                    ./img/example5-des-2x.jpg 2x
+                                 "
+                                 src="./img/example5-des.jpg"
+                                 alt="Проект 1"
+                                 width="370"
+                                 height="294"
+                              />
+                           </picture>
+                           <div class="example-overlay">
+                              <p class="example-thumb-text">
+                                 Ресурс пропонує комплексні пропозиції з різним
+                                 рівнем функціоналу та сервісів. Все це
+                                 дозволить відвідувачу отримати вичерпні
+                                 відомості про компанію чи приватну особу.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="example-text">
+                           <h2 class="example-title">Проєкт Boxes</h2>
+                           <p class="example-dcr">Додаток</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="example-item item">
+                     <a href="/" class="link">
+                        <div class="example-thumb">
+                           <picture>
+                              <source
+                                 srcset="
+                                    ./img/example6-des.jpg    1x,
+                                    ./img/example6-des-2x.jpg 2x
+                                 "
+                                 media="(min-width: 1200px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./img/example6-tab.jpg    1x,
+                                    ./img/example6-tab-2x.jpg 2x
+                                 "
+                                 media="(min-width: 768px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./img/example6-mob.jpg    1x,
+                                    ./img/example6-mob-2x.jpg 2x
+                                 "
+                                 media="(min-width: 480px)"
+                              />
+
+                              <img
+                                 srcset="
+                                    ./img/example6-des.jpg    1x,
+                                    ./img/example6-des-2x.jpg 2x
+                                 "
+                                 src="./img/example6-des.jpg"
+                                 alt="Проект 1"
+                                 width="370"
+                                 height="294"
+                              />
+                           </picture>
+                           <div class="example-overlay">
+                              <p class="example-thumb-text">
+                                 Ресурс пропонує комплексні пропозиції з різним
+                                 рівнем функціоналу та сервісів. Все це
+                                 дозволить відвідувачу отримати вичерпні
+                                 відомості про компанію чи приватну особу.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="example-text">
+                           <h2 class="example-title">
+                              Inspiration has no Borders
+                           </h2>
                            <p class="example-dcr">Веб-сайт</p>
                         </div>
                      </a>
@@ -146,12 +497,40 @@
                   <li class="example-item item">
                      <a href="/" class="link">
                         <div class="example-thumb">
-                           <img
-                              src="./img/example3.jpg"
-                              alt="Проект 1"
-                              width="370"
-                              height="294"
-                           />
+                           <picture>
+                              <source
+                                 srcset="
+                                    ./img/example7-des.jpg    1x,
+                                    ./img/example7-des-2x.jpg 2x
+                                 "
+                                 media="(min-width: 1200px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./img/example7-tab.jpg    1x,
+                                    ./img/example7-tab-2x.jpg 2x
+                                 "
+                                 media="(min-width: 768px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./img/example7-mob.jpg    1x,
+                                    ./img/example7-mob-2x.jpg 2x
+                                 "
+                                 media="(min-width: 480px)"
+                              />
+
+                              <img
+                                 srcset="
+                                    ./img/example7-des.jpg    1x,
+                                    ./img/example7-des-2x.jpg 2x
+                                 "
+                                 src="./img/example7-des.jpg"
+                                 alt="Проект 1"
+                                 width="370"
+                                 height="294"
+                              />
+                           </picture>
                            <div class="example-overlay">
                               <p class="example-thumb-text">
                                  Ресурс пропонує комплексні пропозиції з різним
@@ -162,104 +541,10 @@
                            </div>
                         </div>
                         <div class="example-text">
-                           <h2 class="example-title">Технокряк</h2>
-                           <p class="example-dcr">Веб-сайт</p>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="example-item item">
-                     <a href="/" class="link">
-                        <div class="example-thumb">
-                           <img
-                              src="./img/example4.jpg"
-                              alt="Проект 1"
-                              width="370"
-                              height="294"
-                           />
-                           <div class="example-overlay">
-                              <p class="example-thumb-text">
-                                 Ресурс пропонує комплексні пропозиції з різним
-                                 рівнем функціоналу та сервісів. Все це
-                                 дозволить відвідувачу отримати вичерпні
-                                 відомості про компанію чи приватну особу.
-                              </p>
-                           </div>
-                        </div>
-                        <div class="example-text">
-                           <h2 class="example-title">Технокряк</h2>
-                           <p class="example-dcr">Веб-сайт</p>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="example-item item">
-                     <a href="/" class="link">
-                        <div class="example-thumb">
-                           <img
-                              src="./img/example5.jpg"
-                              alt="Проект 1"
-                              width="370"
-                              height="294"
-                           />
-                           <div class="example-overlay">
-                              <p class="example-thumb-text">
-                                 Ресурс пропонує комплексні пропозиції з різним
-                                 рівнем функціоналу та сервісів. Все це
-                                 дозволить відвідувачу отримати вичерпні
-                                 відомості про компанію чи приватну особу.
-                              </p>
-                           </div>
-                        </div>
-                        <div class="example-text">
-                           <h2 class="example-title">Технокряк</h2>
-                           <p class="example-dcr">Веб-сайт</p>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="example-item item">
-                     <a href="/" class="link">
-                        <div class="example-thumb">
-                           <img
-                              src="./img/example6.jpg"
-                              alt="Проект 1"
-                              width="370"
-                              height="294"
-                           />
-                           <div class="example-overlay">
-                              <p class="example-thumb-text">
-                                 Ресурс пропонує комплексні пропозиції з різним
-                                 рівнем функціоналу та сервісів. Все це
-                                 дозволить відвідувачу отримати вичерпні
-                                 відомості про компанію чи приватну особу.
-                              </p>
-                           </div>
-                        </div>
-                        <div class="example-text">
-                           <h2 class="example-title">Технокряк</h2>
-                           <p class="example-dcr">Веб-сайт</p>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="example-item item">
-                     <a href="/" class="link">
-                        <div class="example-thumb">
-                           <img
-                              src="./img/example7.jpg"
-                              alt="Проект 1"
-                              width="370"
-                              height="294"
-                           />
-                           <div class="example-overlay">
-                              <p class="example-thumb-text">
-                                 Ресурс пропонує комплексні пропозиції з різним
-                                 рівнем функціоналу та сервісів. Все це
-                                 дозволить відвідувачу отримати вичерпні
-                                 відомості про компанію чи приватну особу.
-                              </p>
-                           </div>
-                        </div>
-                        <div class="example-text">
-                           <h2 class="example-title">Технокряк</h2>
-                           <p class="example-dcr">Веб-сайт</p>
+                           <h2 class="example-title">
+                              Видання Limited Edition
+                           </h2>
+                           <p class="example-dcr">Дизайн</p>
                         </div>
                      </a>
                   </li>
@@ -267,12 +552,40 @@
                   <li class="example-item item">
                      <a href="/" class="link">
                         <div class="example-thumb">
-                           <img
-                              src="./img/example8.jpg"
-                              alt="Проект 1"
-                              width="370"
-                              height="294"
-                           />
+                           <picture>
+                              <source
+                                 srcset="
+                                    ./img/example8-des.jpg    1x,
+                                    ./img/example8-des-2x.jpg 2x
+                                 "
+                                 media="(min-width: 1200px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./img/example8-tab.jpg    1x,
+                                    ./img/example8-tab-2x.jpg 2x
+                                 "
+                                 media="(min-width: 768px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./img/example8-mob.jpg    1x,
+                                    ./img/example8-mob-2x.jpg 2x
+                                 "
+                                 media="(min-width: 480px)"
+                              />
+
+                              <img
+                                 srcset="
+                                    ./img/example8-des.jpg    1x,
+                                    ./img/example8-des-2x.jpg 2x
+                                 "
+                                 src="./img/example8-des.jpg"
+                                 alt="Проект 1"
+                                 width="370"
+                                 height="294"
+                              />
+                           </picture>
                            <div class="example-overlay">
                               <p class="example-thumb-text">
                                  Ресурс пропонує комплексні пропозиції з різним
@@ -283,20 +596,48 @@
                            </div>
                         </div>
                         <div class="example-text">
-                           <h2 class="example-title">Технокряк</h2>
-                           <p class="example-dcr">Веб-сайт</p>
+                           <h2 class="example-title">Проєкт LAB</h2>
+                           <p class="example-dcr">Маркетинг</p>
                         </div>
                      </a>
                   </li>
                   <li class="example-item item">
                      <a href="/" class="link">
                         <div class="example-thumb">
-                           <img
-                              src="./img/example9.jpg"
-                              alt="Проект 1"
-                              width="370"
-                              height="294"
-                           />
+                           <picture>
+                              <source
+                                 srcset="
+                                    ./img/example9-des.jpg    1x,
+                                    ./img/example9-des-2x.jpg 2x
+                                 "
+                                 media="(min-width: 1200px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./img/example9-tab.jpg    1x,
+                                    ./img/example9-tab-2x.jpg 2x
+                                 "
+                                 media="(min-width: 768px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./img/example9-mob.jpg    1x,
+                                    ./img/example9-mob-2x.jpg 2x
+                                 "
+                                 media="(min-width: 480px)"
+                              />
+
+                              <img
+                                 srcset="
+                                    ./img/example9-des.jpg    1x,
+                                    ./img/example9-des-2x.jpg 2x
+                                 "
+                                 src="./img/example9-des.jpg"
+                                 alt="Проект 1"
+                                 width="370"
+                                 height="294"
+                              />
+                           </picture>
                            <div class="example-overlay">
                               <p class="example-thumb-text">
                                  Ресурс пропонує комплексні пропозиції з різним
@@ -307,8 +648,8 @@
                            </div>
                         </div>
                         <div class="example-text">
-                           <h2 class="example-title">Технокряк</h2>
-                           <p class="example-dcr">Веб-сайт</p>
+                           <h2 class="example-title">Growing Business</h2>
+                           <p class="example-dcr">Додаток</p>
                         </div>
                      </a>
                   </li>
@@ -408,5 +749,7 @@
             </form>
          </div>
       </footer>
+
+      <script defer src="js/menu.js"></script>
    </body>
 </html>
